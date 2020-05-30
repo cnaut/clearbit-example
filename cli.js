@@ -1,4 +1,4 @@
-var clearbit = require('clearbit')('');
+var clearbit = require('clearbit')(process.env.CLEARBIT_API_SECRET_KEY);
 
 var args  = process.argv.slice(2);
 var arg = args[0];
